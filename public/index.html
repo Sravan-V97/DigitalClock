@@ -24,6 +24,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div id='app'></div>
     <title>React App</title>
   </head>
   <body>
@@ -40,28 +59,25 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      function App()
-      {
-        var hours = document.getElementById('hour');
-        var minutes = document.getElementById('minutes');
-        var seconds = document.getElementById('seconds');
-        var ampm = document.getElementById('ampm');
-        
+      function App() {
+        var hours = document.getElementById("hour");
+        var minutes = document.getElementById("minutes");
+        var seconds = document.getElementById("seconds");
+        var ampm = document.getElementById("ampm");
+
         var h = new Date().getHours();
         var m = new Date().getMinutes();
         var s = new Date().getSeconds();
         var am = "AM";
 
-        if(h > 12)
-        {
+        if (h > 12) {
           h = h - 12;
           var am = "PM";
         }
 
-        h = (h < 10) ? "0" + h : h
-        m = (m < 10) ? "0" + m : m
-        s = (s < 10) ? "0" + s : s
-
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
 
         hours.innerHTML = h;
         minutes.innerHTML = m;

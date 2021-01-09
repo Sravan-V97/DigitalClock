@@ -1,0 +1,35 @@
+
+.AnalogClock {
+    font-family: sans-serif;
+    text-align: -webkit-center;
+  }
+  html, body{
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+  }
+
+  .AnalogClock 
+  {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+
+
+  canvas {
+    display: block;
+    margin-top: 5vh;
+    border-radius: 20%;
+    padding: 20px;
+  }
+  
+  .body::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+  }
