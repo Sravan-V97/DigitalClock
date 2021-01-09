@@ -14,7 +14,7 @@ function Analog() {
             p5.angleMode("degrees");
           }}
           draw={(p5) => {
-            p5.background(99, 99, 99);
+            p5.background(64, 64, 64);
             p5.translate(200, 200);
             p5.rotate(-90);
 
